@@ -20,7 +20,7 @@ function investmentWithCompoundInterest(
   let capital = Number(startAmount);
   let tiempo = Number(timeYears);
   let tasaDeInteres = Number(interestPercentage / 100);
-  
+
   // Calculamos el monto final con interes compuesto
   let montoFinal = capital * (1 + tasaDeInteres) ** tiempo;
   return Number(montoFinal);
@@ -63,7 +63,7 @@ function mostrarMontoInversion() {
         tiempoValue
       );
       resultado = redondeoAlCentesimo(resultado);
-      textResultado.innerHTML = `Your investment with initial capital of $${montoValue} and simple annual interest of ${interesValue}% over ${tiempoValue} years will be <span>$${resultado}</span>`;
+      textResultado.innerHTML = `Tu inversión con un capital inicial de $${montoValue} con interés simple anual del ${interesValue}% durante ${tiempoValue} años será de <span>$${resultado}</span>`;
     }
     if (tipoInteresValue === "compound") {
       resultado = investmentWithCompoundInterest(
@@ -72,9 +72,9 @@ function mostrarMontoInversion() {
         tiempoValue
       );
       resultado = redondeoAlCentesimo(resultado);
-      textResultado.innerHTML = `Your investment with initial capital of $${montoValue} and compound annual interest of ${interesValue}% over ${tiempoValue} years will be <span>$${resultado}</span>`;
+      textResultado.innerHTML = `Tu inversión con un capital inicial de $${montoValue} con interés compuesto anual del ${interesValue}% durante ${tiempoValue} años será de <span>$${resultado}</span>`;
     }
   } else {
-    textResultado.innerHTML = `Missing data ❗❗`;
+    textResultado.innerHTML = `Faltan datos ❗❗`;
   }
 }
