@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interes simple y compuesto</title>
 </head>
 <body>
     <main>
         <section class="box">
           <div class="box-content">
             <div class="title">
-              <p class="title-text">Know your investment</p>
+              <p class="title-text">Conoce los beneficios de aplicar el interés compuesto</p>
             </div>
             <form class="form-container">
               <div class="group-container">
                 <div class="group-left">
                   <div class="label-input-container">
-                    <label for="amount">What's the investment amount? </label>
+                    <label for="amount"> ¿Cuánto vas a invertir? </label>
                     <input
                       type="number"
                       name="amount"
@@ -26,7 +26,7 @@
                     />
                   </div>
                   <div class="label-input-container">
-                    <label for="time">What's the time lapse in years? </label>
+                    <label for="time">¿Cuanto es el tiempo en años que puedes dejar trabajando tu dinero? </label>
                     <input
                       type="number"
                       name="time"
@@ -38,7 +38,7 @@
                 <div class="group-right">
                   <div class="label-input-container">
                     <label for="interest"
-                      >What's the annual interest? (on %)</label
+                      >¿Cuál es el interés anual? (en %)</label
                     >
                     <input
                       type="text"
@@ -48,10 +48,10 @@
                     />
                   </div>
                   <div class="label-input-container">
-                    <label for="type-interest">What kind of interest?</label>
+                    <label for="type-interest">¿Qué tipo de interés?</label>
                     <select name="type-interest" id="type-interest" class="input">
                       <option value="simple">Simple</option>
-                      <option value="compound">Compound</option>
+                      <option value="compound">compuesto</option>
                     </select>
                   </div>
                 </div>
@@ -62,15 +62,15 @@
                   class="btn btn-calculate"
                   onclick="mostrarMontoInversion()"
                 >
-                  Calculate
+                  Calcular
                 </button>
                 <button type="button" class="btn btn-reset" onclick="reset()">
-                  Reset
+                  Resetear
                 </button>
               </div>
             </form>
             <div class="answer-container">
-              <p class="answer-text" id="answer">Final investment</p>
+              <p class="answer-text" id="answer">inversión final </p>
             </div>
           </div>
         </section>
